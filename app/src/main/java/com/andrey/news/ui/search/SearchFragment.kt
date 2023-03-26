@@ -10,13 +10,13 @@ import com.andrey.news.databinding.FragmentSearchBinding
 class SearchFragment : Fragment() {
 
     private var _binding: FragmentSearchBinding? = null
-    private val mBinding get() = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentSearchBinding.inflate(layoutInflater, container, false)
-        return mBinding.root
+        return binding.root
     }
 }

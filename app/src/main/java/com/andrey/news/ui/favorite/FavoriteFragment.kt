@@ -10,13 +10,13 @@ import com.andrey.news.databinding.FragmentFavoriteBinding
 class FavoriteFragment : Fragment() {
 
     private var _binding: FragmentFavoriteBinding? = null
-    private val mBinding get() = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentFavoriteBinding.inflate(layoutInflater, container, false)
-        return mBinding.root
+        return binding.root
     }
 }
